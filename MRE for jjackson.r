@@ -24,7 +24,7 @@ library(zoo)
 
 
 fulldata <- list(xx=xdailyfulldata,
-                   yy=ymonthfulldata)
+                   yy=ymonthlyfulldata)
 insample <- 1:length(yvellareg)
 outsample <- (1:length(fulldata$yy))[-insample]
 
