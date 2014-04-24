@@ -27,6 +27,7 @@ fulldata <- list(xx=xdailyfulldata,
 insample <- 1:length(yvellareg)
 outsample <- (1:length(fulldata$yy))[-insample]
 
+#error here
 avgf<-average_forecast(list(betareg),
                        data=fulldata,
                        insample=insample,
