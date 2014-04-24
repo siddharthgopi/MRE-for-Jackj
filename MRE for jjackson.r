@@ -21,7 +21,7 @@ library(zoo)
  ymonthlyfulldataread <- read.table("~/Desktop/attempt1/ymonthlyfulldatajackson.csv", quote="\"")
  ymonthlyfulldata <- ts(ymonthlyfulldataread,start=c(2008,7), frequency=12)
 
-#similar to the example in the userguide
+
 fulldata <- list(xx=xdailyfulldata,
                    yy=ymonthfulldata)
 insample <- 1:length(yvellareg)
