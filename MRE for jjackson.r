@@ -12,6 +12,7 @@ library(zoo)
 #yvellareg is the monthly y variable
 #xvellareg is the daily x variable
  betareg <- midas_r(yvellareg ~ mls(yvellareg, 1, 1) + mls(xvellareg, 3:25, 30), start=NULL)
+ summary(betareg)
 
 
 #Defining data for forecasting
